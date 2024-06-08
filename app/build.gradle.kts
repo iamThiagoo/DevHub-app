@@ -45,4 +45,6 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-storage")
 
+    implementation("com.google.android.material:material:1.12.0")
+
 }

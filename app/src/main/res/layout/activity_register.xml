@@ -24,8 +24,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/dancing_script"
-            android:text="DevHub"
-            android:textColor="#0B81AF"
+            android:text="@string/app_name"
+            android:textColor="@color/primary_color"
             android:textSize="50dp" />
 
         <TextView
@@ -34,7 +34,7 @@
             android:layout_marginVertical="10dp"
             android:layout_weight="1"
             android:fontFamily="@font/poppins"
-            android:text="Cadastre-se para ter o acesso aos melhores e-books na palma da mão"
+            android:text="@string/register_subtitle"
             android:textFontWeight="600"
             android:textSize="14sp" />
 
@@ -46,7 +46,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/poppins"
-            android:hint="Nome Completo"
+            android:hint="@string/fullname"
             android:inputType="textEmailAddress"
             android:textSize="16dp" />
 
@@ -58,7 +58,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/poppins"
-            android:hint="E-mail"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:textSize="16dp" />
 
@@ -70,7 +70,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/poppins"
-            android:hint="Senha"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:textSize="16dp" />
 
@@ -81,10 +81,10 @@
             android:layout_gravity="center"
             android:layout_marginVertical="10dp"
             android:layout_weight="1"
-            android:backgroundTint="#0B81AF"
+            android:backgroundTint="@color/primary_color"
             android:fontFamily="@font/poppins"
             android:paddingVertical="13dp"
-            android:text="Finalizar Cadastro"
+            android:text="@string/register_submit"
             android:textFontWeight="900"
             android:textSize="15dp" />
 
@@ -101,7 +101,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins"
-                android:text="Já possui uma conta?"
+                android:text="@string/have_account"
                 android:textAlignment="textEnd"
                 android:textFontWeight="600"
                 android:textSize="14sp" />
@@ -114,9 +114,9 @@
                 android:backgroundTint="#00FFFFFF"
                 android:fontFamily="@font/poppins"
                 android:paddingLeft="5dp"
-                android:text="Entrar"
+                android:text="@string/sign_in"
                 android:textAlignment="textStart"
-                android:textColor="#0B81AF"
+                android:textColor="@color/primary_color"
                 android:textFontWeight="600"
                 android:textSize="14sp" />
         </LinearLayout>

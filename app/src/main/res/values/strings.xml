@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">DevHub</string>
+
+    <!-- Authenticação e Cadastro -->
+    <string name="fullname">Nome Completo</string>
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Logue e explore os melhores Tech E-books</string>
+    <string name="login_submit">Acessar</string>
+    <string name="dont_have_account">Não possu uma conta?</string>
+    <string name="register">Registre-se</string>
+
+    <!-- Cadastro -->
+    <string name="register_subtitle">Cadastre-se para ter o acesso aos melhores e-books na palma da mão</string>
+    <string name="register_submit">Finalizar Cadastro</string>
+    <string name="have_account">Já possui uma conta?</string>
+    <string name="sign_in">Entrar</string>
+
 </resources>
