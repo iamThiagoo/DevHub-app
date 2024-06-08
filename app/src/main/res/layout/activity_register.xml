@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activities.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/dancing_script"
+            android:text="DevHub"
+            android:textColor="#0B81AF"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Cadastre-se para ter o acesso aos melhores e-books na palma da mão"
+            android:textFontWeight="600"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Nome Completo"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#0B81AF"
+            android:fontFamily="@font/poppins"
+            android:paddingVertical="13dp"
+            android:text="Finalizar Cadastro"
+            android:textFontWeight="900"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:text="Já possui uma conta?"
+                android:textAlignment="textEnd"
+                android:textFontWeight="600"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="5dp"
+                android:text="Entrar"
+                android:textAlignment="textStart"
+                android:textColor="#0B81AF"
+                android:textFontWeight="600"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
