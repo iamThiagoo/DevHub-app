@@ -7,6 +7,12 @@
         android:title="@string/home" />
 
     <item
+        android:id="@+id/books"
+        android:icon="@drawable/search"
+        android:enabled="true"
+        android:title="Buscar" />
+
+    <item
         android:id="@+id/add_book"
         android:icon="@drawable/post_add"
         android:enabled="true"

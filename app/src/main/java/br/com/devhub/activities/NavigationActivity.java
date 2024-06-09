@@ -12,15 +12,20 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import br.com.devhub.R;
+import br.com.devhub.fragments.AddBookFragment;
 import br.com.devhub.fragments.HomeFragment;
 import br.com.devhub.fragments.LoginFragment;
+import br.com.devhub.fragments.UserBookFragment;
 
 public class NavigationActivity extends AppCompatActivity {
 
     private HomeFragment homeFragment;
     private LoginFragment loginFragment;
+    private UserBookFragment userBookFragment;
+    private AddBookFragment addBookFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,22 +45,28 @@ public class NavigationActivity extends AppCompatActivity {
 
         homeFragment  = new HomeFragment();
         loginFragment = new LoginFragment();
+        userBookFragment = new UserBookFragment();
+        addBookFragment = new AddBookFragment();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.home) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
-                    return true;
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
+                } else if (itemId == R.id.books) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new AddBookFragment()).commit();
+                } else if (itemId == R.id.add_book) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new AddBookFragment()).commit();
+                } else if (itemId == R.id.my_books) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new UserBookFragment()).commit();
                 } else if (itemId == R.id.login) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, loginFragment).commit();
-                    return true;
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new LoginFragment()).commit();
                 }
 
-                return false;
+                return true;
             }
         });
     }
