@@ -20,7 +20,7 @@
 
     <!-- Cadastro -->
     <string name="register_subtitle">Cadastre-se para ter o acesso aos melhores e-books na palma da mão</string>
-    <string name="register_submit">Finalizar Cadastro</string>
+    <string name="register_submit">Criar Conta</string>
     <string name="have_account">Já possui uma conta?</string>
     <string name="sign_in">Entrar</string>
     <string name="large_text">
@@ -112,5 +112,16 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -19,7 +19,7 @@
         android:title="@string/my_books" />
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/login"
         android:icon="@drawable/user"
         android:enabled="true"
         android:title="@string/profile" />

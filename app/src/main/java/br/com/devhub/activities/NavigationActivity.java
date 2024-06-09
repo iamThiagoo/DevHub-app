@@ -15,10 +15,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import br.com.devhub.R;
 import br.com.devhub.fragments.HomeFragment;
+import br.com.devhub.fragments.LoginFragment;
 
 public class NavigationActivity extends AppCompatActivity {
 
     private HomeFragment homeFragment;
+    private LoginFragment loginFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +32,15 @@ public class NavigationActivity extends AppCompatActivity {
         // Configura navegação
         setBottomNavigationConfigs();
 
+        // Inicializa o fragmento
         getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
     }
 
     protected void setBottomNavigationConfigs() {
 
-        homeFragment = new HomeFragment();
+        homeFragment  = new HomeFragment();
+        loginFragment = new LoginFragment();
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
@@ -44,6 +49,9 @@ public class NavigationActivity extends AppCompatActivity {
 
                 if (itemId == R.id.home) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
+                    return true;
+                } else if (itemId == R.id.login) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, loginFragment).commit();
                     return true;
                 }
 
