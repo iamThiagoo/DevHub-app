@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.DevHub" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/primary_color</item>
+        <item name="colorSurface">@color/primary_color</item>
+        <item name="colorOnSurfaceVariant">@color/primary_color</item>
     </style>
-
     <style name="Theme.DevHub" parent="Base.Theme.DevHub" />
 </resources>
