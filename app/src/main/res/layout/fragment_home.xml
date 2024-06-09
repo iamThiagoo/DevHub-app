@@ -5,9 +5,421 @@
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Bom dia, visitante!"
+                    android:textAlignment="textStart"
+                    android:textFontWeight="800"
+                    android:textSize="18dp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="O que vamos ler hoje?" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Mais indicados -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Os e-books mais indicados" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/carousel_item_container"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:id="@+id/carousel_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/carousel_image_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/carousel_image_view3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+
+        <!-- Em alta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Em alta" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+        <!-- Em alta -->
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+        <!-- Python -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Python" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+        <!-- IA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Inteligência Artificial" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>]
+
+        <!-- JavaScript -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="JavaScript" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+        <!-- JavaScript -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="SQL" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+        <!-- JavaScript -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Desenvolvimento Front-End" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+        <!-- Desenvolvimento Back-End -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Desenvolvimento Back-End" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+        <!-- Assuntos Diversos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Assuntos Diversos" />
+
+        <com.google.android.material.carousel.MaskableFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </com.google.android.material.carousel.MaskableFrameLayout>
+
+
+        <!-- Final -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="800"
+            android:fontFamily="@font/poppins"
+            android:textSize="15dp"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:text="😉 Você chegou ao fim!" />
+    </LinearLayout>
 </androidx.core.widget.NestedScrollView>
