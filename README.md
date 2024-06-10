@@ -1,4 +1,6 @@
-<img src="https://i.imgur.com/ylyl5Ng.jpg" width="35%" />
+<p align="center">
+  <img src="https://i.imgur.com/ylyl5Ng.jpg" width="35%" />
+</p>
 
 O **DevHub** é um projeto desenvolvido como parte de um trabalho acadêmico. Ele visa fornecer acesso facilitado a uma ampla gama de livros relacionados ao desenvolvimento de software para os usuários.
 
