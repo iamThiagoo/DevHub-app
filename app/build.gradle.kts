@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.annotation)
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.legacy.support.v4)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -52,5 +53,7 @@ dependencies {
     implementation("com.google.firebase:firebase-storage")
 
     implementation("com.google.android.material:material:1.12.0")
+    implementation("com.itextpdf:itext7-core:7.1.15")
 
+    implementation("com.github.bumptech.glide:glide:4.15.1")
 }

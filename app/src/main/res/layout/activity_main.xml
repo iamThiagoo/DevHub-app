@@ -24,18 +24,7 @@
             android:textAlignment="center"
             android:textFontWeight="900"
             android:textColor="@color/primary_color"
-            android:textSize="60dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/playfair_display"
-            android:text="Onde Conhecimento e Desenvolvimento se Encontram"
-            android:textAlignment="center"
-            android:textFontWeight="900"
-            android:textColor="@color/primary_color"
-            android:layout_marginHorizontal="20dp"
-            android:textSize="16dp" />
+            android:textSize="70dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,6 +23,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.concurrent.Executor;
 
@@ -32,6 +33,7 @@ import br.com.devhub.activities.NavigationActivity;
 public class LoginFragment extends Fragment {
 
     protected FirebaseAuth mAuth;
+    protected FirebaseUser user;
     protected EditText edtEmail;
     protected EditText edtPassword;
 
@@ -54,6 +56,16 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        mAuth = FirebaseAuth.getInstance();
+        user = mAuth.getCurrentUser();
+
+        if (user != null) {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new ProfileFragment());
+            fragmentTransaction.commit();
+        }
 
         View view = inflater.inflate(R.layout.fragment_login, container, false);
 

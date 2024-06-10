@@ -1,7 +1,9 @@
 package br.com.devhub.classes;
 
+import com.google.firebase.Timestamp;
+
 import java.math.BigInteger;
-import java.sql.Timestamp;
+import java.sql.Time;
 
 public class Book {
     private String name;
@@ -10,10 +12,9 @@ public class Book {
     private String file;
     private String author;
     private String created_by;
-    private BigInteger created_at;
-    private BigInteger updated_at;
+    private Timestamp created_at;
 
-    public Book (String name, String description, String thumbnail, String file, String author, String created_by, BigInteger created_at, BigInteger updated_at) {
+    public Book (String name, String description, String author, String thumbnail, String file, String created_by, Timestamp created_at) {
         this.name = name;
         this.description = description;
         this.thumbnail = thumbnail;
@@ -21,7 +22,6 @@ public class Book {
         this.author = author;
         this.created_by = created_by;
         this.created_at = created_at;
-        this.updated_at = updated_at;
     }
 
     public String getName() {
@@ -48,11 +48,7 @@ public class Book {
         return created_by;
     }
 
-    public BigInteger getCreatedAt() {
+    public Timestamp getCreatedAt() {
         return created_at;
-    }
-
-    public BigInteger getUpdatedAt() {
-        return updated_at;
     }
 }

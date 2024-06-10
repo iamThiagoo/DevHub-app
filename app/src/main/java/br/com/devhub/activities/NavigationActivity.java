@@ -16,6 +16,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 import br.com.devhub.R;
 import br.com.devhub.fragments.AddBookFragment;
+import br.com.devhub.fragments.BooksFragment;
 import br.com.devhub.fragments.HomeFragment;
 import br.com.devhub.fragments.LoginFragment;
 import br.com.devhub.fragments.UserBookFragment;
@@ -57,7 +58,7 @@ public class NavigationActivity extends AppCompatActivity {
                 if (itemId == R.id.home) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
                 } else if (itemId == R.id.books) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new AddBookFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new BooksFragment()).commit();
                 } else if (itemId == R.id.add_book) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new AddBookFragment()).commit();
                 } else if (itemId == R.id.my_books) {
