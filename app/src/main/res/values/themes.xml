@@ -3,8 +3,9 @@
     <style name="Base.Theme.DevHub" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:statusBarColor">@color/primary_color</item>
-        <item name="colorSurface">@color/primary_color</item>
         <item name="colorOnSurfaceVariant">@color/primary_color</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
     </style>
     <style name="Theme.DevHub" parent="Base.Theme.DevHub" />
 </resources>

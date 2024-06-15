@@ -10,17 +10,18 @@ import android.view.ViewGroup;
 
 import br.com.devhub.R;
 
-public class ProfileFragment extends Fragment {
+public class EditProfile extends Fragment {
 
     private String mParam1;
     private String mParam2;
 
-    public ProfileFragment() {
+    public EditProfile() {
         // Required empty public constructor
     }
 
-    public static ProfileFragment newInstance(String param1, String param2) {
-        ProfileFragment fragment = new ProfileFragment();
+
+    public static EditProfile newInstance() {
+        EditProfile fragment = new EditProfile();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -35,6 +36,6 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        return inflater.inflate(R.layout.fragment_edit_profile, container, false);
     }
 }
