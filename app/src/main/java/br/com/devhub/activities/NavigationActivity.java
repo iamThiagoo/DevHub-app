@@ -65,7 +65,7 @@ public class NavigationActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new AddBookFragment()).commit();
                 }
                 else if (itemId == R.id.my_books) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new UserBookFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new BooksFragment()).commit();
                 }
                 else if (itemId == R.id.login) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new LoginFragment()).commit();

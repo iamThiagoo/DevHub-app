@@ -9,13 +9,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="25dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="25dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -24,6 +24,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/helloUser"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
@@ -31,7 +32,7 @@
                     android:text="Bom dia, visitante!"
                     android:textAlignment="textStart"
                     android:textFontWeight="800"
-                    android:textSize="18dp"
+                    android:textSize="21dp"
                     tools:ignore="RtlCompat" />
 
                 <TextView
@@ -44,6 +45,39 @@
 
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Na DevHub você está sempre atualizado 🚀"
+            android:textAlignment="textStart"
+            android:textFontWeight="900"
+            android:textSize="20dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Com os melhores e-books de forma gratuita!" />
+
+        </LinearLayout>
+
         <!-- Mais indicados -->
         <TextView
             android:layout_width="match_parent"
@@ -51,13 +85,15 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
-            android:layout_marginTop="20dp"
-            android:text="Os e-books mais indicados" />
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="25dp"
+            android:text="Nossos e-books mais indicados" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recycler"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -69,6 +105,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginTop="20dp"
             android:text="Em alta" />
 
@@ -76,6 +113,7 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerTrending"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -86,6 +124,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginTop="20dp"
             android:text="Python" />
 
@@ -93,6 +132,7 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerPython"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -103,6 +143,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginTop="20dp"
             android:text="Inteligência Artificial" />
 
@@ -110,6 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerIA"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -120,6 +162,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginTop="20dp"
             android:text="JavaScript" />
 
@@ -127,6 +170,7 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerJavascript"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -137,6 +181,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginTop="20dp"
             android:text="SQL" />
 
@@ -144,6 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerSQL"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -154,6 +200,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginTop="20dp"
             android:text="Desenvolvimento Front-End" />
 
@@ -161,6 +208,7 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerFrontEnd"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -172,6 +220,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="17dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginTop="20dp"
             android:text="Desenvolvimento Back-End" />
 
@@ -179,6 +228,7 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerBackEnd"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
@@ -188,6 +238,7 @@
             android:layout_height="wrap_content"
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="25dp"
             android:textSize="17dp"
             android:layout_marginTop="20dp"
             android:text="Assuntos Diversos" />
@@ -196,9 +247,9 @@
             android:layout_width="match_parent"
             android:layout_height="200sp"
             android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerOthers"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
-
 
         <!-- Final -->
         <TextView
@@ -208,6 +259,7 @@
             android:fontFamily="@font/poppins"
             android:textSize="15dp"
             android:layout_marginVertical="40dp"
+            android:layout_marginHorizontal="25dp"
             android:textAlignment="center"
             android:text="😉 Você chegou ao fim!" />
     </LinearLayout>

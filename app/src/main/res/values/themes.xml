@@ -6,6 +6,9 @@
         <item name="colorOnSurfaceVariant">@color/primary_color</item>
         <item name="colorSurface">@color/white</item>
         <item name="android:colorBackground">@color/white</item>
+
+        <item name="colorPrimary">@color/primary_color_active</item>
+        <item name="colorSecondaryContainer">#AD7FD9FB</item>
     </style>
     <style name="Theme.DevHub" parent="Base.Theme.DevHub" />
 </resources>

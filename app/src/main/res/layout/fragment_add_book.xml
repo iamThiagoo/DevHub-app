@@ -13,14 +13,31 @@
         android:layout_marginTop="30dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:textSize="19dp"
-            android:textFontWeight="900"
-            android:text="Adicionar Livro/E-book" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/helloUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Adicionar Livro/E-book"
+                android:textAlignment="textStart"
+                android:textFontWeight="800"
+                android:textSize="18dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Contribua com um livro para o nosso acervo!" />
+        </LinearLayout>
 
         <EditText
             android:id="@+id/edtName"
