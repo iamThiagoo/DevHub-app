@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment">
 
     <LinearLayout
@@ -53,36 +54,12 @@
             android:layout_marginTop="20dp"
             android:text="Os e-books mais indicados" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/carousel_item_container"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
-
-            <ImageView
-                android:id="@+id/carousel_image_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:id="@+id/carousel_image_view2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:id="@+id/carousel_image_view3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recycler"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
 
         <!-- Em alta -->
@@ -95,60 +72,12 @@
             android:layout_marginTop="20dp"
             android:text="Em alta" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
-
-        <!-- Em alta -->
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerTrending"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
         <!-- Python -->
         <TextView
@@ -160,32 +89,12 @@
             android:layout_marginTop="20dp"
             android:text="Python" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerPython"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
         <!-- IA -->
         <TextView
@@ -197,32 +106,12 @@
             android:layout_marginTop="20dp"
             android:text="Inteligência Artificial" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>]
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerIA"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
         <!-- JavaScript -->
         <TextView
@@ -234,34 +123,14 @@
             android:layout_marginTop="20dp"
             android:text="JavaScript" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerJavascript"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
-
-        <!-- JavaScript -->
+        <!-- SQL -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -271,34 +140,14 @@
             android:layout_marginTop="20dp"
             android:text="SQL" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerSQL"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
-
-        <!-- JavaScript -->
+        <!-- Front-End -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -308,32 +157,13 @@
             android:layout_marginTop="20dp"
             android:text="Desenvolvimento Front-End" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerFrontEnd"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
 
         <!-- Desenvolvimento Back-End -->
         <TextView
@@ -345,32 +175,12 @@
             android:layout_marginTop="20dp"
             android:text="Desenvolvimento Back-End" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerBackEnd"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
         <!-- Assuntos Diversos -->
         <TextView
@@ -382,32 +192,12 @@
             android:layout_marginTop="20dp"
             android:text="Assuntos Diversos" />
 
-        <com.google.android.material.carousel.MaskableFrameLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
-        </com.google.android.material.carousel.MaskableFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/recyclerOthers"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
 
         <!-- Final -->
@@ -417,7 +207,7 @@
             android:textFontWeight="800"
             android:fontFamily="@font/poppins"
             android:textSize="15dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginVertical="40dp"
             android:textAlignment="center"
             android:text="😉 Você chegou ao fim!" />
     </LinearLayout>

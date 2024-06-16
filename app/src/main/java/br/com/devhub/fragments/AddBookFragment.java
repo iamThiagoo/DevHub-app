@@ -59,6 +59,7 @@ public class AddBookFragment extends Fragment {
     protected Button btnSubmit;
     protected ImageView imageView;
     protected EditText edtName;
+    protected TextView txtFile;
     protected EditText edtDescription;
     protected EditText edtAuthor;
 
@@ -180,6 +181,7 @@ public class AddBookFragment extends Fragment {
                 edtDescription = view.findViewById(R.id.edtDescription);
                 edtAuthor = view.findViewById(R.id.edtAuthor);
                 progress = view.findViewById(R.id.progress_bar);
+                txtFile = view.findViewById(R.id.file);
 
                 processBook();
             }
@@ -253,6 +255,7 @@ public class AddBookFragment extends Fragment {
         db.collection("books").document(documentId).set(book)
             .addOnSuccessListener(aVoid -> {
                 Toast.makeText(getContext(), "Livro adicionado com sucesso!", Toast.LENGTH_SHORT).show();
+                clearForm();
             })
             .addOnFailureListener(e -> {
                 Toast.makeText(getContext(), "Erro ao salvar livro no Firestore!", Toast.LENGTH_SHORT).show();
@@ -281,5 +284,14 @@ public class AddBookFragment extends Fragment {
         }
 
         return true;
+    }
+
+
+    private void clearForm() {
+        edtName.setText("");
+        edtDescription.setText("");
+        edtAuthor.setText("");
+        imageView.setImageResource(0);
+        txtFile.setText("");
     }
 }

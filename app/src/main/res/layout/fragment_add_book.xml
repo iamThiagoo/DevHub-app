@@ -13,12 +13,6 @@
         android:layout_marginTop="30dp"
         android:orientation="vertical">
 
-        <com.google.android.material.progressindicator.LinearProgressIndicator
-            android:id="@+id/progress_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -105,6 +99,12 @@
             android:fontFamily="@font/poppins"
             android:paddingVertical="13dp"
             android:text="Ao salvar, será automaticamente disponibilizado para todos os usuários. Por favor, revise antes de adicionar ao acervo." />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/btnSubmit"

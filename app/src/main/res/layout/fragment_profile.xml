@@ -84,7 +84,7 @@
                 android:text="Configurações" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnMyData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
@@ -101,7 +101,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="50dp">
 
-                <TextView
+                <Button
+                    android:backgroundTint="#fff"
+                    android:id="@+id/exitAccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
@@ -109,7 +111,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/red"
                     android:textFontWeight="800"
-                    android:textSize="15dp" />
+                    android:textSize="16dp" />
             </RelativeLayout>
 
         </LinearLayout>

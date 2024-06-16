@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dancing_script"
             android:text="@string/app_name"
+            android:textFontWeight="900"
             android:textColor="@color/primary_color"
             android:textSize="50sp" />
 

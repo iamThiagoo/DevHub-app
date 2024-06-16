@@ -1,5 +1,6 @@
 package br.com.devhub.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,13 +8,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import br.com.devhub.R;
 
 public class ProfileFragment extends Fragment {
 
-    private String mParam1;
-    private String mParam2;
+    protected View view;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -32,9 +36,52 @@ public class ProfileFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        // Define ação do botão para editar perfil do usuário
+        onEditProfile();
+
+        // Define ação do botão de sair da conta
+        onExitAccount();
+
+        return view;
+    }
+
+
+    protected void onEditProfile() {
+        Button btnMyData = view.findViewById(R.id.btnMyData);
+        btnMyData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditProfile editProfile = new EditProfile();
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, editProfile).commit();
+            }
+        });
+    }
+
+
+    protected void onExitAccount() {
+        Button btnExitAccount = view.findViewById(R.id.exitAccount);
+        btnExitAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+                try {
+                    // Desloga usuário
+                    mAuth.signOut();
+                    Thread.sleep(1000);
+
+                    // Volta para tela de login
+                    LoginFragment loginFragment = new LoginFragment();
+                    requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, loginFragment).commit();
+
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
     }
 }

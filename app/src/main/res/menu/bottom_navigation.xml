@@ -6,11 +6,11 @@
         android:enabled="true"
         android:title="@string/home" />
 
-    <item
+    <!--<item
         android:id="@+id/books"
         android:icon="@drawable/search"
         android:enabled="true"
-        android:title="Buscar" />
+        android:title="Buscar" />-->
 
     <item
         android:id="@+id/add_book"
