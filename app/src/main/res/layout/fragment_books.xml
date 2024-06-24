@@ -26,7 +26,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/helloUser"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
@@ -34,11 +33,10 @@
                     android:text="Meus Livros"
                     android:textAlignment="textStart"
                     android:textFontWeight="800"
-                    android:textSize="18dp"
+                    android:textSize="21dp"
                     tools:ignore="RtlCompat" />
 
                 <TextView
-                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14dp"

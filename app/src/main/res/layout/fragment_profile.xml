@@ -14,13 +14,21 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
-            android:textSize="19dp"
-            android:textFontWeight="900"
-            android:text="Meu Perfil" />
+            android:gravity="center"
+            android:text="Meu Perfil"
+            android:textAlignment="textStart"
+            android:textFontWeight="800"
+            android:textSize="21dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Afinal, quem é você?" />
 
         <LinearLayout
             android:layout_width="match_parent"
