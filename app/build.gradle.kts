@@ -56,4 +56,5 @@ dependencies {
     implementation("com.itextpdf:itext7-core:7.1.15")
 
     implementation("com.github.bumptech.glide:glide:4.15.1")
+    implementation("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
 }

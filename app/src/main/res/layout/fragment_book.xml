@@ -108,7 +108,7 @@
                 android:backgroundTint="#057E19"
                 android:fontFamily="@font/poppins"
                 android:paddingVertical="13dp"
-                android:text="ABRIR PREVIEW"
+                android:text="VISUALIZAR LIVRO"
                 android:textFontWeight="900"
                 android:textSize="15sp" />
 
