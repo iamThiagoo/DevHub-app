@@ -1,27 +1,63 @@
 package br.com.devhub.classes;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
 import com.google.firebase.Timestamp;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.math.BigInteger;
 import java.sql.Time;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Book {
+public class Book implements Parcelable {
+
+    private String id;
     private String name;
     private String description;
     private String thumbnail;
     private String file;
     private String author;
     private String created_by;
-    private Timestamp created_at;
 
-    public Book (String name, String description, String author, String thumbnail, String file, String created_by, Timestamp created_at) {
+    public Book (String id, String name, String description, String author, String thumbnail, String file, String created_by) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.thumbnail = thumbnail;
         this.file = file;
         this.author = author;
         this.created_by = created_by;
-        this.created_at = created_at;
+    }
+
+    protected Book(Parcel in) {
+        id = in.readString();
+        name = in.readString();
+        description = in.readString();
+        thumbnail = in.readString();
+        file = in.readString();
+        author = in.readString();
+        created_by = in.readString();
+    }
+
+    public static final Creator<Book> CREATOR = new Creator<Book>() {
+        @Override
+        public Book createFromParcel(Parcel in) {
+            return new Book(in);
+        }
+
+        @Override
+        public Book[] newArray(int size) {
+            return new Book[size];
+        }
+    };
+
+    public String getId() {
+        return id;
     }
 
     public String getName() {
@@ -48,7 +84,19 @@ public class Book {
         return created_by;
     }
 
-    public Timestamp getCreatedAt() {
-        return created_at;
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeString(id);
+        dest.writeString(name);
+        dest.writeString(description);
+        dest.writeString(thumbnail);
+        dest.writeString(file);
+        dest.writeString(author);
+        dest.writeString(created_by);
     }
 }

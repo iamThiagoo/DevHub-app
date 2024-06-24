@@ -90,16 +90,15 @@
             android:text="Nossos e-books mais indicados" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="200sp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_marginTop="10sp"
             android:layout_marginHorizontal="25dp"
             android:id="@+id/recycler"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
-
-
+        
         <!-- Em alta -->
-        <TextView
+<!--        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textFontWeight="800"
@@ -115,10 +114,10 @@
             android:layout_marginTop="10sp"
             android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerTrending"
-            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>-->
 
         <!-- Python -->
-        <TextView
+        <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textFontWeight="800"
@@ -136,7 +135,7 @@
             android:id="@+id/recyclerPython"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-        <!-- IA -->
+        &lt;!&ndash; IA &ndash;&gt;
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,7 +154,7 @@
             android:id="@+id/recyclerIA"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-        <!-- JavaScript -->
+        &lt;!&ndash; JavaScript &ndash;&gt;
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -174,7 +173,7 @@
             android:id="@+id/recyclerJavascript"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-        <!-- SQL -->
+        &lt;!&ndash; SQL &ndash;&gt;
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -193,7 +192,7 @@
             android:id="@+id/recyclerSQL"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-        <!-- Front-End -->
+        &lt;!&ndash; Front-End &ndash;&gt;
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -213,7 +212,7 @@
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
 
-        <!-- Desenvolvimento Back-End -->
+        &lt;!&ndash; Desenvolvimento Back-End &ndash;&gt;
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -232,7 +231,7 @@
             android:id="@+id/recyclerBackEnd"
             app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
 
-        <!-- Assuntos Diversos -->
+        &lt;!&ndash; Assuntos Diversos &ndash;&gt;
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -249,7 +248,7 @@
             android:layout_marginTop="10sp"
             android:layout_marginHorizontal="25dp"
             android:id="@+id/recyclerOthers"
-            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>-->
 
         <!-- Final -->
         <TextView

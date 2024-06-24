@@ -43,28 +43,21 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txtUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
                     android:textFontWeight="800"
                     android:textSize="16dp"
-                    android:layout_marginTop="3dp"
-                    android:text="Thiago Ferreira" />
+                    android:layout_marginTop="3dp" />
 
                 <TextView
+                    android:id="@+id/txtEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
-                    android:textFontWeight="800"
-                    android:layout_marginTop="10dp"
-                    android:text="Livros Baixados: 5" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:textFontWeight="800"
-                    android:text="Livros Publicados: 10" />
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp" />
             </LinearLayout>
         </LinearLayout>
 

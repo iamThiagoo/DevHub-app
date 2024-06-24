@@ -9,9 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import br.com.devhub.R;
 
@@ -39,6 +41,17 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        TextView txtUsername = view.findViewById(R.id.txtUsername);
+        TextView txtEmail = view.findViewById(R.id.txtEmail);
+
+        // Recupera o usuário logado
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        // Define o nome do usuário
+        txtUsername.setText(user.getDisplayName());
+        txtEmail.setText(user.getEmail());
 
         // Define ação do botão para editar perfil do usuário
         onEditProfile();

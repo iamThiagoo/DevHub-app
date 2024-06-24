@@ -14,7 +14,21 @@
         android:layout_height="match_parent"
         android:transitionName="image"
         android:scaleType="centerCrop"
-        android:id="@+id/list_item_image"
-        />
+        android:id="@+id/list_item_image" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        android:textFontWeight="800"
+        android:fontFamily="@font/poppins"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:gravity="start"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:visibility="gone" />
 
 </com.google.android.material.carousel.MaskableFrameLayout>
