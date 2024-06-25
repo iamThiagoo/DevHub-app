@@ -43,8 +43,8 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Glide.with(context).load(books.get(position).getThumbnail()).into(holder.imageView);
-        holder.textView.setText(books.get(position).getName());
-        holder.textView.setVisibility(View.VISIBLE);
+        //holder.textView.setText(books.get(position).getName());
+        //holder.textView.setVisibility(View.VISIBLE);
 
         holder.itemView.setOnClickListener(view -> {
             onItemClickListener.onClick(books.get(position));
@@ -63,7 +63,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.list_item_image);
-            textView = itemView.findViewById(R.id.item_text);
+            //textView = itemView.findViewById(R.id.item_text);
         }
     }
 
