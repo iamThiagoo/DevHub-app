@@ -14,6 +14,15 @@ O **DevHub** é um projeto desenvolvido como parte de um trabalho acadêmico. El
 
 O objetivo principal do DevHub é oferecer um espaço colaborativo e prático para que os desenvolvedores possam acessar, compartilhar e descobrir recursos de leitura úteis para aprimorar suas habilidades.
 
+## Screenshots
+
+<p>
+  <img src="https://i.imgur.com/YGN6Dvr.png" width="30%" />
+  <img src="https://i.imgur.com/s7swZ5t.png" width="30%" />
+  <img src="https://i.imgur.com/p894c2n.png" width="30%" />
+  <img src="https://i.imgur.com/RUgCu0T.png" width="30%" />
+</p>
+
 ---
 
 ## Contato
