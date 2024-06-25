@@ -249,7 +249,7 @@ public class AddBookFragment extends Fragment {
         book.put("author", edtAuthor.getText().toString());
         book.put("thumbnail", imageUrl);
         book.put("file", pdfUrl);
-        book.put("created_by", user.getUid());
+        book.put("created_by", user.getDisplayName());
         book.put("created_at", createdAt);
 
         db.collection("books").document(documentId).set(book)

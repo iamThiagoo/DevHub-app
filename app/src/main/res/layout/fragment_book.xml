@@ -63,42 +63,10 @@
                 android:id="@+id/txtBookCreatedBy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="15dp"
                 android:textAlignment="center"
                 android:textFontWeight="800"
                 android:textSize="14dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/poppins"
-                android:text="Autor"
-                android:textFontWeight="800"
-                android:textSize="17dp" />
-
-            <TextView
-                android:id="@+id/txtBookAuthor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/poppins"
-                android:text="Descrição/Sinopse"
-                android:textFontWeight="800"
-                android:textSize="17dp" />
-
-            <TextView
-                android:id="@+id/txtBookDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"
-                />
 
             <Button
                 android:id="@+id/btnPreview"
@@ -137,6 +105,38 @@
                 android:text="@string/addToMyBooks"
                 android:textFontWeight="900"
                 android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Autor"
+                android:textFontWeight="800"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Descrição/Sinopse"
+                android:textFontWeight="800"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtBookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                />
 
         </LinearLayout>
     </LinearLayout>

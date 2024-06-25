@@ -64,7 +64,7 @@ public class BookPdfFragment extends Fragment {
         toolbar.setNavigationOnClickListener(v -> activity.getOnBackPressedDispatcher().onBackPressed());
 
         File directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File localFile = new File(directory, "documento.pdf");
+        File localFile = new File(directory, book.getName() + ".pdf");
 
         StorageReference storageRef = FirebaseStorage.getInstance().getReferenceFromUrl(book.getFile());
         storageRef.getFile(localFile).addOnSuccessListener(taskSnapshot -> {
